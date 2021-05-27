@@ -61,17 +61,11 @@ function PlasmicHeader__RenderFunc(props) {
         data-plasmic-override={overrides.navigation}
         className={classNames("__wab_instance", sty.navigation)}
       >
-        <Inputs
-          className={classNames("__wab_instance", sty.inputs___8R7Sm)}
-          link={"/page"}
-        >
+        <Inputs className={classNames("__wab_instance", sty.inputs___8R7Sm)}>
           {"About"}
         </Inputs>
 
-        <Inputs
-          className={classNames("__wab_instance", sty.inputs__eqVhL)}
-          link={"/page"}
-        >
+        <Inputs className={classNames("__wab_instance", sty.inputs__eqVhL)}>
           {"Contact"}
         </Inputs>
       </Navigation>
