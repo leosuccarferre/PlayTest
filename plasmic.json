@@ -54,32 +54,6 @@
           "componentType": "component"
         },
         {
-          "id": "fwJQcLvPXd",
-          "name": "About",
-          "type": "managed",
-          "projectId": "wP9heSzxawTbjKEhrsKJZp",
-          "renderModuleFilePath": "plasmic/play_test/PlasmicAbout.jsx",
-          "importSpec": {
-            "modulePath": "../pages/about.jsx"
-          },
-          "cssFilePath": "plasmic/play_test/PlasmicAbout.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "w_nwgduMFS",
-          "name": "Contact",
-          "type": "managed",
-          "projectId": "wP9heSzxawTbjKEhrsKJZp",
-          "renderModuleFilePath": "plasmic/play_test/PlasmicContact.jsx",
-          "importSpec": {
-            "modulePath": "../pages/contact.jsx"
-          },
-          "cssFilePath": "plasmic/play_test/PlasmicContact.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "Si51uqhESX",
           "name": "Navigation",
           "type": "managed",
