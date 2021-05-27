@@ -60,7 +60,7 @@ function PlasmicAbout__RenderFunc(props) {
               sty.box
             )}
           >
-            {"PlayTest"}
+            {"About"}
           </div>
         </div>
       </div>
