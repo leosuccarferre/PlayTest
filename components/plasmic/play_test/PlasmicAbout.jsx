@@ -10,13 +10,12 @@
 // Component: GPYSU_3Kf2
 import * as React from "react";
 import Head from "next/head";
-import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import Inputs from "../../Inputs"; // plasmic-import: zkyzGMiVRz/component
+import Header from "../../Header"; // plasmic-import: yamXspCqk3/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "../blank_project/plasmic_blank_project.module.css"; // plasmic-import: wP9heSzxawTbjKEhrsKJZp/projectcss
@@ -58,33 +57,11 @@ function PlasmicAbout__RenderFunc(props) {
             data-plasmic-override={overrides.section}
             className={classNames(defaultcss.all, sty.section)}
           >
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"container2"}
-              data-plasmic-override={overrides.container2}
-              hasGap={true}
-              className={classNames(defaultcss.all, sty.container2)}
-            >
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
-                  sty.box___7JNSn
-                )}
-              >
-                {"Testing"}
-              </div>
-
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(defaultcss.all, sty.box__kpT3B)}
-              >
-                <Inputs>{"Home"}</Inputs>
-
-                <Inputs>{"About"}</Inputs>
-              </p.Stack>
-            </p.Stack>
+            <Header
+              data-plasmic-name={"header"}
+              data-plasmic-override={overrides.header}
+              className={classNames("__wab_instance", sty.header)}
+            />
           </section>
         </div>
       </div>
@@ -93,9 +70,9 @@ function PlasmicAbout__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "container2"],
-  section: ["section", "container2"],
-  container2: ["container2"]
+  root: ["root", "section", "header"],
+  section: ["section", "header"],
+  header: ["header"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -130,7 +107,7 @@ export const PlasmicAbout = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
-    container2: makeNodeComponent("container2"),
+    header: makeNodeComponent("header"),
     // Metadata about props expected for PlasmicAbout
     internalVariantProps: PlasmicAbout__VariantProps,
     internalArgProps: PlasmicAbout__ArgProps

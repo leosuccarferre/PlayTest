@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  width: 100%;
+  position: relative;
+  min-width: 0;
+  padding: 16px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 16px;
+}
+.box__ry3Yt {
+  font-size: 32px;
+  font-weight: 900;
+}
+.box__o3T3S {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box__o3T3S > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.box__o3T3S > :global(.__wab_flex-container) > *,
+.box__o3T3S > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8px;
+}

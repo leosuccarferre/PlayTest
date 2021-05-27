@@ -10,13 +10,12 @@
 // Component: Wm2BnPF0AwwC
 import * as React from "react";
 import Head from "next/head";
-import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import Inputs from "../../Inputs"; // plasmic-import: zkyzGMiVRz/component
+import Header from "../../Header"; // plasmic-import: yamXspCqk3/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wP9heSzxawTbjKEhrsKJZp/projectcss
@@ -58,33 +57,11 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-override={overrides.section}
             className={classNames(defaultcss.all, sty.section)}
           >
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"container"}
-              data-plasmic-override={overrides.container}
-              hasGap={true}
-              className={classNames(defaultcss.all, sty.container)}
-            >
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
-                  sty.box__nfyt
-                )}
-              >
-                {"Leo"}
-              </div>
-
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(defaultcss.all, sty.box___2R9OY)}
-              >
-                <Inputs link={"/"}>{"Home"}</Inputs>
-
-                <Inputs link={"/about"}>{"About"}</Inputs>
-              </p.Stack>
-            </p.Stack>
+            <Header
+              data-plasmic-name={"header"}
+              data-plasmic-override={overrides.header}
+              className={classNames("__wab_instance", sty.header)}
+            />
           </section>
         </div>
       </div>
@@ -93,9 +70,9 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "container"],
-  section: ["section", "container"],
-  container: ["container"]
+  root: ["root", "section", "header"],
+  section: ["section", "header"],
+  header: ["header"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -130,7 +107,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
-    container: makeNodeComponent("container"),
+    header: makeNodeComponent("header"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps

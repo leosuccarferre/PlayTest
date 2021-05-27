@@ -65,6 +65,19 @@
           "cssFilePath": "plasmic/play_test/PlasmicAbout.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "yamXspCqk3",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "wP9heSzxawTbjKEhrsKJZp",
+          "renderModuleFilePath": "plasmic/play_test/PlasmicHeader.jsx",
+          "importSpec": {
+            "modulePath": "Header.jsx"
+          },
+          "cssFilePath": "plasmic/play_test/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [],
