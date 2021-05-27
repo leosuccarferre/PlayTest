@@ -2,33 +2,17 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  border-radius: 6px;
-  padding: 8px 12px;
-}
-.root > :global(.__wab_flex-container) {
-  flex-direction: row;
-  margin-left: calc(0px - 8px);
-  width: calc(100% + 8px);
-}
-.root > :global(.__wab_flex-container) > *,
-.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
-  margin-left: 8px;
+  align-items: stretch;
+  justify-content: flex-start;
 }
 .root:hover {
   background: #0a84ff1a;
 }
-.img {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
-}
-.img__icons_start {
-  align-self: center;
-}
 .link {
   display: flex;
   flex-direction: row;
+  border-radius: 6px;
+  padding: 8px 12px;
 }
 .slotChildren {
   color: #0a84ffd9;

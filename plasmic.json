@@ -29,14 +29,14 @@
       "components": [
         {
           "id": "Wm2BnPF0AwwC",
-          "name": "Home",
+          "name": "Homepage",
           "type": "managed",
           "projectId": "wP9heSzxawTbjKEhrsKJZp",
-          "renderModuleFilePath": "plasmic/blank_project/PlasmicHome.jsx",
+          "renderModuleFilePath": "plasmic/blank_project/PlasmicHomepage.jsx",
           "importSpec": {
             "modulePath": "../pages/index.jsx"
           },
-          "cssFilePath": "plasmic/blank_project/PlasmicHome.module.css",
+          "cssFilePath": "plasmic/blank_project/PlasmicHomepage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         },
@@ -54,40 +54,21 @@
           "componentType": "component"
         },
         {
-          "id": "Si51uqhESX",
-          "name": "Navigation",
+          "id": "GPYSU_3Kf2",
+          "name": "About",
           "type": "managed",
           "projectId": "wP9heSzxawTbjKEhrsKJZp",
-          "renderModuleFilePath": "plasmic/play_test/PlasmicNavigation.jsx",
+          "renderModuleFilePath": "plasmic/play_test/PlasmicAbout.jsx",
           "importSpec": {
-            "modulePath": "Navigation.jsx"
+            "modulePath": "../pages/about.jsx"
           },
-          "cssFilePath": "plasmic/play_test/PlasmicNavigation.module.css",
+          "cssFilePath": "plasmic/play_test/PlasmicAbout.module.css",
           "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "0uMS0WKflp",
-          "name": "Header",
-          "type": "managed",
-          "projectId": "wP9heSzxawTbjKEhrsKJZp",
-          "renderModuleFilePath": "plasmic/play_test/PlasmicHeader.jsx",
-          "importSpec": {
-            "modulePath": "Header.jsx"
-          },
-          "cssFilePath": "plasmic/play_test/PlasmicHeader.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
+          "componentType": "page"
         }
       ],
       "icons": [],
-      "images": [
-        {
-          "id": "HsK147hWXN",
-          "name": "image",
-          "filePath": "../public/plasmic/play_test/images/image.svg"
-        }
-      ],
+      "images": [],
       "projectApiToken": "v9BeFNkXpUn447isoh5CWcrtrVCMcrF4AwSDGkUkZ2uc1XP50G2OjCEfkO23VCVa4XQSL2w9yr0xVASnbQ"
     }
   ],
