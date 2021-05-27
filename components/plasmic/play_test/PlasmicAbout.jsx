@@ -72,7 +72,7 @@ function PlasmicAbout__RenderFunc(props) {
                   sty.box___7JNSn
                 )}
               >
-                {"Leo"}
+                {"Testing"}
               </div>
 
               <p.Stack
