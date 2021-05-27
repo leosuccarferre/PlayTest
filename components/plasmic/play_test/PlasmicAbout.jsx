@@ -17,6 +17,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Inputs from "../../Inputs"; // plasmic-import: zkyzGMiVRz/component
+import Navigation from "../../Navigation"; // plasmic-import: Si51uqhESX/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "../blank_project/plasmic_blank_project.module.css"; // plasmic-import: wP9heSzxawTbjKEhrsKJZp/projectcss
@@ -66,39 +67,29 @@ function PlasmicAbout__RenderFunc(props) {
               className={classNames(defaultcss.all, sty.container)}
             >
               <Inputs
-                className={classNames("__wab_instance", sty.inputs___5U4Ii)}
+                data-plasmic-name={"inputs"}
+                data-plasmic-override={overrides.inputs}
+                className={classNames("__wab_instance", sty.inputs)}
                 link={""}
               >
                 <div
+                  data-plasmic-name={"box"}
+                  data-plasmic-override={overrides.box}
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.box__iRwAs
+                    sty.box
                   )}
                 >
                   {"Leo"}
                 </div>
               </Inputs>
 
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(defaultcss.all, sty.box__prDj)}
-              >
-                <Inputs
-                  active={"active"}
-                  className={classNames("__wab_instance", sty.inputs___1OEb)}
-                  link={"/about"}
-                >
-                  {"About"}
-                </Inputs>
-
-                <Inputs
-                  className={classNames("__wab_instance", sty.inputs__dJGwj)}
-                >
-                  {"Contact"}
-                </Inputs>
-              </p.Stack>
+              <Navigation
+                data-plasmic-name={"navigation"}
+                data-plasmic-override={overrides.navigation}
+                className={classNames("__wab_instance", sty.navigation)}
+              />
             </p.Stack>
           </section>
         </div>
@@ -108,9 +99,12 @@ function PlasmicAbout__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "container"],
-  section: ["section", "container"],
-  container: ["container"]
+  root: ["root", "section", "container", "inputs", "box", "navigation"],
+  section: ["section", "container", "inputs", "box", "navigation"],
+  container: ["container", "inputs", "box", "navigation"],
+  inputs: ["inputs", "box"],
+  box: ["box"],
+  navigation: ["navigation"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -146,6 +140,9 @@ export const PlasmicAbout = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     container: makeNodeComponent("container"),
+    inputs: makeNodeComponent("inputs"),
+    box: makeNodeComponent("box"),
+    navigation: makeNodeComponent("navigation"),
     // Metadata about props expected for PlasmicAbout
     internalVariantProps: PlasmicAbout__VariantProps,
     internalArgProps: PlasmicAbout__ArgProps

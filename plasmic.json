@@ -78,6 +78,19 @@
           "cssFilePath": "plasmic/play_test/PlasmicContact.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "Si51uqhESX",
+          "name": "Navigation",
+          "type": "managed",
+          "projectId": "wP9heSzxawTbjKEhrsKJZp",
+          "renderModuleFilePath": "plasmic/play_test/PlasmicNavigation.jsx",
+          "importSpec": {
+            "modulePath": "Navigation.jsx"
+          },
+          "cssFilePath": "plasmic/play_test/PlasmicNavigation.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [],
