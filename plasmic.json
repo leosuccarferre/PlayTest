@@ -23,7 +23,7 @@
   "projects": [
     {
       "projectId": "wP9heSzxawTbjKEhrsKJZp",
-      "projectName": "Blank project",
+      "projectName": "PlayTest",
       "version": "latest",
       "cssFilePath": "plasmic/blank_project/plasmic_blank_project.module.css",
       "components": [
@@ -37,6 +37,19 @@
             "modulePath": "../pages/index.jsx"
           },
           "cssFilePath": "plasmic/blank_project/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "GPYSU_3Kf2",
+          "name": "About",
+          "type": "managed",
+          "projectId": "wP9heSzxawTbjKEhrsKJZp",
+          "renderModuleFilePath": "plasmic/play_test/PlasmicAbout.jsx",
+          "importSpec": {
+            "modulePath": "../pages/about.jsx"
+          },
+          "cssFilePath": "plasmic/play_test/PlasmicAbout.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
