@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.root:hover {
+  background: #0a84ff1a;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+.slotChildren {
+  color: #0a84ffd9;
+}
+.slotChildren__active {
+  font-weight: 700;
+}
+.root:hover .slotChildren > *,
+.root:hover .slotChildren > .__wab_slot > *,
+.root:hover .slotChildren > .__wab_slot > .__wab_slot > *,
+.root:hover .slotChildren > .__wab_slot > .__wab_slot > .__wab_slot > * {
+  text-decoration-line: underline;
+}

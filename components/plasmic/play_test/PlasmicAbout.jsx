@@ -10,11 +10,13 @@
 // Component: GPYSU_3Kf2
 import * as React from "react";
 import Head from "next/head";
+import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
+import Inputs from "../../Inputs"; // plasmic-import: zkyzGMiVRz/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "../blank_project/plasmic_blank_project.module.css"; // plasmic-import: wP9heSzxawTbjKEhrsKJZp/projectcss
@@ -51,17 +53,42 @@ function PlasmicAbout__RenderFunc(props) {
             sty.root
           )}
         >
-          <div
-            data-plasmic-name={"box"}
-            data-plasmic-override={overrides.box}
-            className={classNames(
-              defaultcss.all,
-              defaultcss.__wab_text,
-              sty.box
-            )}
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"container"}
+            data-plasmic-override={overrides.container}
+            hasGap={true}
+            className={classNames(defaultcss.all, sty.container)}
           >
-            {"About"}
-          </div>
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.box__u9BpZ
+              )}
+            >
+              {"About"}
+            </div>
+
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(defaultcss.all, sty.box__ju4Az)}
+            >
+              <Inputs
+                className={classNames("__wab_instance", sty.inputs__vbkQf)}
+                link={""}
+              >
+                {"Home"}
+              </Inputs>
+
+              <Inputs
+                className={classNames("__wab_instance", sty.inputs__ocBjX)}
+              >
+                {"About"}
+              </Inputs>
+            </p.Stack>
+          </p.Stack>
         </div>
       </div>
     </React.Fragment>
@@ -69,8 +96,8 @@ function PlasmicAbout__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "box"],
-  box: ["box"]
+  root: ["root", "container"],
+  container: ["container"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -104,7 +131,7 @@ export const PlasmicAbout = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    box: makeNodeComponent("box"),
+    container: makeNodeComponent("container"),
     // Metadata about props expected for PlasmicAbout
     internalVariantProps: PlasmicAbout__VariantProps,
     internalArgProps: PlasmicAbout__ArgProps

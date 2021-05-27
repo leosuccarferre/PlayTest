@@ -52,6 +52,19 @@
           "cssFilePath": "plasmic/play_test/PlasmicAbout.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "zkyzGMiVRz",
+          "name": "Inputs",
+          "type": "managed",
+          "projectId": "wP9heSzxawTbjKEhrsKJZp",
+          "renderModuleFilePath": "plasmic/play_test/PlasmicInputs.jsx",
+          "importSpec": {
+            "modulePath": "Inputs.jsx"
+          },
+          "cssFilePath": "plasmic/play_test/PlasmicInputs.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [],
