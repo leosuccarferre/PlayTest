@@ -37,24 +37,11 @@
 .container > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-top: 16px;
 }
-.box__sh6Du {
+.box {
   font-weight: 700;
   color: #ffffffd9;
   font-size: 32px;
 }
-.box__t03Kw {
-  display: flex;
+.navigation:global(.__wab_instance) {
   position: relative;
-  flex-direction: row;
-}
-.box__t03Kw > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  margin-left: calc(0px - 8px);
-  width: calc(100% + 8px);
-}
-.box__t03Kw > :global(.__wab_flex-container) > *,
-.box__t03Kw > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
-  margin-left: 8px;
 }

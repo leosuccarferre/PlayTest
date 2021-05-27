@@ -17,6 +17,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Inputs from "../../Inputs"; // plasmic-import: zkyzGMiVRz/component
+import Navigation from "../../Navigation"; // plasmic-import: Si51uqhESX/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "../blank_project/plasmic_blank_project.module.css"; // plasmic-import: wP9heSzxawTbjKEhrsKJZp/projectcss
@@ -70,23 +71,25 @@ function PlasmicContact__RenderFunc(props) {
                 link={""}
               >
                 <div
+                  data-plasmic-name={"box"}
+                  data-plasmic-override={overrides.box}
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.box__sh6Du
+                    sty.box
                   )}
                 >
                   {"Leo"}
                 </div>
               </Inputs>
 
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(defaultcss.all, sty.box__t03Kw)}
+              <Navigation
+                data-plasmic-name={"navigation"}
+                data-plasmic-override={overrides.navigation}
+                className={classNames("__wab_instance", sty.navigation)}
               >
                 <Inputs
-                  className={classNames("__wab_instance", sty.inputs__wa6M)}
+                  className={classNames("__wab_instance", sty.inputs__gv9Dd)}
                   link={"/about"}
                 >
                   {"About"}
@@ -94,11 +97,11 @@ function PlasmicContact__RenderFunc(props) {
 
                 <Inputs
                   active={"active"}
-                  className={classNames("__wab_instance", sty.inputs__gmbtx)}
+                  className={classNames("__wab_instance", sty.inputs__j8ZH)}
                 >
                   {"Contact"}
                 </Inputs>
-              </p.Stack>
+              </Navigation>
             </p.Stack>
           </section>
         </div>
@@ -108,9 +111,11 @@ function PlasmicContact__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "container"],
-  section: ["section", "container"],
-  container: ["container"]
+  root: ["root", "section", "container", "box", "navigation"],
+  section: ["section", "container", "box", "navigation"],
+  container: ["container", "box", "navigation"],
+  box: ["box"],
+  navigation: ["navigation"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -146,6 +151,8 @@ export const PlasmicContact = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     container: makeNodeComponent("container"),
+    box: makeNodeComponent("box"),
+    navigation: makeNodeComponent("navigation"),
     // Metadata about props expected for PlasmicContact
     internalVariantProps: PlasmicContact__VariantProps,
     internalArgProps: PlasmicContact__ArgProps

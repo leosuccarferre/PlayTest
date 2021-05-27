@@ -67,9 +67,7 @@ function PlasmicAbout__RenderFunc(props) {
               className={classNames(defaultcss.all, sty.container)}
             >
               <Inputs
-                data-plasmic-name={"inputs"}
-                data-plasmic-override={overrides.inputs}
-                className={classNames("__wab_instance", sty.inputs)}
+                className={classNames("__wab_instance", sty.inputs___5U4Ii)}
                 link={""}
               >
                 <div
@@ -89,7 +87,21 @@ function PlasmicAbout__RenderFunc(props) {
                 data-plasmic-name={"navigation"}
                 data-plasmic-override={overrides.navigation}
                 className={classNames("__wab_instance", sty.navigation)}
-              />
+              >
+                <Inputs
+                  active={"active"}
+                  className={classNames("__wab_instance", sty.inputs__dblle)}
+                  link={"/about"}
+                >
+                  {"About"}
+                </Inputs>
+
+                <Inputs
+                  className={classNames("__wab_instance", sty.inputs__wt8By)}
+                >
+                  {"Contact"}
+                </Inputs>
+              </Navigation>
             </p.Stack>
           </section>
         </div>
@@ -99,10 +111,9 @@ function PlasmicAbout__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "container", "inputs", "box", "navigation"],
-  section: ["section", "container", "inputs", "box", "navigation"],
-  container: ["container", "inputs", "box", "navigation"],
-  inputs: ["inputs", "box"],
+  root: ["root", "section", "container", "box", "navigation"],
+  section: ["section", "container", "box", "navigation"],
+  container: ["container", "box", "navigation"],
   box: ["box"],
   navigation: ["navigation"]
 };
@@ -140,7 +151,6 @@ export const PlasmicAbout = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     container: makeNodeComponent("container"),
-    inputs: makeNodeComponent("inputs"),
     box: makeNodeComponent("box"),
     navigation: makeNodeComponent("navigation"),
     // Metadata about props expected for PlasmicAbout

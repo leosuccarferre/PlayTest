@@ -23,7 +23,7 @@ import * as sty from "./PlasmicNavigation.module.css"; // plasmic-import: Si51uq
 
 export const PlasmicNavigation__VariantProps = new Array();
 
-export const PlasmicNavigation__ArgProps = new Array();
+export const PlasmicNavigation__ArgProps = new Array("children");
 
 function PlasmicNavigation__RenderFunc(props) {
   const { variants, args, overrides, forNode, dataFetches } = props;
@@ -37,17 +37,19 @@ function PlasmicNavigation__RenderFunc(props) {
       hasGap={true}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
-      <Inputs
-        active={"active"}
-        className={classNames("__wab_instance", sty.inputs__i79Kl)}
-        link={"/about"}
-      >
-        {"About"}
-      </Inputs>
+      {p.renderPlasmicSlot({
+        defaultContents: (
+          <Inputs
+            active={"active"}
+            className={classNames("__wab_instance", sty.inputs__sapJq)}
+            link={"/about"}
+          >
+            {"About"}
+          </Inputs>
+        ),
 
-      <Inputs className={classNames("__wab_instance", sty.inputs__ko39G)}>
-        {"Contact"}
-      </Inputs>
+        value: args.children
+      })}
     </p.Stack>
   );
 }
