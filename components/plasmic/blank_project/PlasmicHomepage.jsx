@@ -80,19 +80,9 @@ function PlasmicHomepage__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(defaultcss.all, sty.box___2R9OY)}
               >
-                <Inputs
-                  className={classNames("__wab_instance", sty.inputs__gE3Lt)}
-                  link={""}
-                >
-                  {"Home"}
-                </Inputs>
+                <Inputs link={"/"}>{"Home"}</Inputs>
 
-                <Inputs
-                  className={classNames("__wab_instance", sty.inputs___8Y3Zl)}
-                  link={"/about"}
-                >
-                  {"About"}
-                </Inputs>
+                <Inputs link={"/about"}>{"About"}</Inputs>
               </p.Stack>
             </p.Stack>
           </section>

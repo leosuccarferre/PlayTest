@@ -53,42 +53,39 @@ function PlasmicAbout__RenderFunc(props) {
             sty.root
           )}
         >
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"container"}
-            data-plasmic-override={overrides.container}
-            hasGap={true}
-            className={classNames(defaultcss.all, sty.container)}
+          <section
+            data-plasmic-name={"section"}
+            data-plasmic-override={overrides.section}
+            className={classNames(defaultcss.all, sty.section)}
           >
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.box__u9BpZ
-              )}
-            >
-              {"About"}
-            </div>
-
             <p.Stack
               as={"div"}
+              data-plasmic-name={"container2"}
+              data-plasmic-override={overrides.container2}
               hasGap={true}
-              className={classNames(defaultcss.all, sty.box__ju4Az)}
+              className={classNames(defaultcss.all, sty.container2)}
             >
-              <Inputs
-                className={classNames("__wab_instance", sty.inputs__vbkQf)}
-                link={""}
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box___7JNSn
+                )}
               >
-                {"Home"}
-              </Inputs>
+                {"Leo"}
+              </div>
 
-              <Inputs
-                className={classNames("__wab_instance", sty.inputs__ocBjX)}
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.box__kpT3B)}
               >
-                {"About"}
-              </Inputs>
+                <Inputs>{"Home"}</Inputs>
+
+                <Inputs>{"About"}</Inputs>
+              </p.Stack>
             </p.Stack>
-          </p.Stack>
+          </section>
         </div>
       </div>
     </React.Fragment>
@@ -96,8 +93,9 @@ function PlasmicAbout__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "container"],
-  container: ["container"]
+  root: ["root", "section", "container2"],
+  section: ["section", "container2"],
+  container2: ["container2"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -131,7 +129,8 @@ export const PlasmicAbout = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    container: makeNodeComponent("container"),
+    section: makeNodeComponent("section"),
+    container2: makeNodeComponent("container2"),
     // Metadata about props expected for PlasmicAbout
     internalVariantProps: PlasmicAbout__VariantProps,
     internalArgProps: PlasmicAbout__ArgProps
