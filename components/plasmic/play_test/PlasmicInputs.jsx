@@ -22,22 +22,38 @@ import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-i
 import * as projectcss from "../blank_project/plasmic_blank_project.module.css"; // plasmic-import: wP9heSzxawTbjKEhrsKJZp/projectcss
 import * as sty from "./PlasmicInputs.module.css"; // plasmic-import: zkyzGMiVRz/css
 
-export const PlasmicInputs__VariantProps = new Array("active");
+export const PlasmicInputs__VariantProps = new Array("active", "icons");
 
 export const PlasmicInputs__ArgProps = new Array("children", "link");
 
 function PlasmicInputs__RenderFunc(props) {
   const { variants, args, overrides, forNode, dataFetches } = props;
   return (
-    <div
+    <p.Stack
+      as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
+      hasGap={true}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__active]: hasVariant(variants, "active", "active")
+        [sty.root__active]: hasVariant(variants, "active", "active"),
+        [sty.root__icons_start]: hasVariant(variants, "icons", "start")
       })}
     >
+      {(hasVariant(variants, "icons", "start") ? true : false) ? (
+        <img
+          data-plasmic-name={"img"}
+          data-plasmic-override={overrides.img}
+          alt={""}
+          className={classNames(defaultcss.img, sty.img, {
+            [sty.img__icons_start]: hasVariant(variants, "icons", "start")
+          })}
+          role={"img"}
+          src={"/plasmic/play_test/images/image.svg"}
+        />
+      ) : null}
+
       <p.PlasmicLink
         data-plasmic-name={"link"}
         data-plasmic-override={overrides.link}
@@ -50,16 +66,27 @@ function PlasmicInputs__RenderFunc(props) {
           defaultContents: "Link",
           value: args.children,
           className: classNames(sty.slotChildren, {
-            [sty.slotChildren__active]: hasVariant(variants, "active", "active")
+            [sty.slotChildren__active]: hasVariant(
+              variants,
+              "active",
+              "active"
+            ),
+
+            [sty.slotChildren__icons_start]: hasVariant(
+              variants,
+              "icons",
+              "start"
+            )
           })
         })}
       </p.PlasmicLink>
-    </div>
+    </p.Stack>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link"],
+  root: ["root", "img", "link"],
+  img: ["img"],
   link: ["link"]
 };
 
@@ -94,6 +121,7 @@ export const PlasmicInputs = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
     link: makeNodeComponent("link"),
     // Metadata about props expected for PlasmicInputs
     internalVariantProps: PlasmicInputs__VariantProps,

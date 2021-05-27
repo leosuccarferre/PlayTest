@@ -38,18 +38,23 @@ function PlasmicHeader__RenderFunc(props) {
       hasGap={true}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
-      <Inputs
-        className={classNames("__wab_instance", sty.inputs___2LZg)}
-        link={""}
-      >
-        <div
-          data-plasmic-name={"box"}
-          data-plasmic-override={overrides.box}
-          className={classNames(defaultcss.all, defaultcss.__wab_text, sty.box)}
+      <div className={classNames(defaultcss.all, sty.box__ciiha)}>
+        <Inputs
+          className={classNames("__wab_instance", sty.inputs___2LZg)}
+          icons={["start"]}
+          link={"/"}
         >
-          {"Leo"}
-        </div>
-      </Inputs>
+          <div
+            className={classNames(
+              defaultcss.all,
+              defaultcss.__wab_text,
+              sty.box__gVNsx
+            )}
+          >
+            {"Leo"}
+          </div>
+        </Inputs>
+      </div>
 
       <Navigation
         data-plasmic-name={"navigation"}
@@ -75,8 +80,7 @@ function PlasmicHeader__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "box", "navigation"],
-  box: ["box"],
+  root: ["root", "navigation"],
   navigation: ["navigation"]
 };
 
@@ -111,7 +115,6 @@ export const PlasmicHeader = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    box: makeNodeComponent("box"),
     navigation: makeNodeComponent("navigation"),
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,

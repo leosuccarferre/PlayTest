@@ -24,12 +24,12 @@
         {
           "type": "renderModule",
           "assetId": "zkyzGMiVRz",
-          "checksum": "c96e5426cd025f11f7d0e07f04555736"
+          "checksum": "9dd700c5374c4e9ff9b13a9401b797c6"
         },
         {
           "type": "cssRules",
           "assetId": "zkyzGMiVRz",
-          "checksum": "c96e5426cd025f11f7d0e07f04555736"
+          "checksum": "9dd700c5374c4e9ff9b13a9401b797c6"
         },
         {
           "type": "renderModule",
@@ -40,6 +40,26 @@
           "type": "cssRules",
           "assetId": "Si51uqhESX",
           "checksum": "46b8fc28bd0c96eac843758d15fdfea3"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "0uMS0WKflp",
+          "checksum": "af82b31a3bea2731f7bed289d186cbec"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "0uMS0WKflp",
+          "checksum": "af82b31a3bea2731f7bed289d186cbec"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "SLtkqqdbg7",
+          "checksum": "f6e5d6ae4c62a3eaf36b4f6fc5edcb17"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "SLtkqqdbg7",
+          "checksum": "f6e5d6ae4c62a3eaf36b4f6fc5edcb17"
         },
         {
           "assetId": "wP9heSzxawTbjKEhrsKJZp",
@@ -47,24 +67,9 @@
           "checksum": "fa46b138c48ef070ca4d2929a712c68a"
         },
         {
-          "type": "renderModule",
-          "assetId": "0uMS0WKflp",
-          "checksum": "50149e0b1d2528b6539cf2b0bb9be361"
-        },
-        {
-          "type": "cssRules",
-          "assetId": "0uMS0WKflp",
-          "checksum": "50149e0b1d2528b6539cf2b0bb9be361"
-        },
-        {
-          "type": "renderModule",
-          "assetId": "SLtkqqdbg7",
-          "checksum": "f6e5d6ae4c62a3eaf36b4f6fc5edcb17"
-        },
-        {
-          "type": "cssRules",
-          "assetId": "SLtkqqdbg7",
-          "checksum": "f6e5d6ae4c62a3eaf36b4f6fc5edcb17"
+          "type": "image",
+          "assetId": "HsK147hWXN",
+          "checksum": "8b2c1b9f6f7141fbc9da9a48f49cd3ae"
         }
       ]
     }

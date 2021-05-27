@@ -94,7 +94,13 @@
         }
       ],
       "icons": [],
-      "images": [],
+      "images": [
+        {
+          "id": "HsK147hWXN",
+          "name": "image",
+          "filePath": "../public/plasmic/play_test/images/image.svg"
+        }
+      ],
       "projectApiToken": "v9BeFNkXpUn447isoh5CWcrtrVCMcrF4AwSDGkUkZ2uc1XP50G2OjCEfkO23VCVa4XQSL2w9yr0xVASnbQ"
     }
   ],

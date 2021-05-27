@@ -18,7 +18,16 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-top: 16px;
 }
-.box {
+.box__ciiha {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 0;
+}
+.box__gVNsx {
   font-weight: 700;
   color: #ffffffd9;
   font-size: 32px;
