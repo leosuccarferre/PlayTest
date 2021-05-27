@@ -17,6 +17,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Inputs from "../../Inputs"; // plasmic-import: zkyzGMiVRz/component
+import Navigation from "../../Navigation"; // plasmic-import: Si51uqhESX/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wP9heSzxawTbjKEhrsKJZp/projectcss
@@ -70,35 +71,36 @@ function PlasmicHome__RenderFunc(props) {
                 link={""}
               >
                 <div
+                  data-plasmic-name={"box"}
+                  data-plasmic-override={overrides.box}
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.box__acEOl
+                    sty.box
                   )}
                 >
                   {"Leo"}
                 </div>
               </Inputs>
 
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(defaultcss.all, sty.box___2R9OY)}
+              <Navigation
+                data-plasmic-name={"navigation"}
+                data-plasmic-override={overrides.navigation}
+                className={classNames("__wab_instance", sty.navigation)}
               >
                 <Inputs
-                  className={classNames("__wab_instance", sty.inputs___8Y3Zl)}
+                  className={classNames("__wab_instance", sty.inputs__gfYtz)}
                   link={"/about"}
                 >
                   {"About"}
                 </Inputs>
 
                 <Inputs
-                  className={classNames("__wab_instance", sty.inputs__hq9Xe)}
-                  link={"/contact"}
+                  className={classNames("__wab_instance", sty.inputs__ntQAo)}
                 >
                   {"Contact"}
                 </Inputs>
-              </p.Stack>
+              </Navigation>
             </p.Stack>
           </section>
         </div>
@@ -108,9 +110,11 @@ function PlasmicHome__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "container"],
-  section: ["section", "container"],
-  container: ["container"]
+  root: ["root", "section", "container", "box", "navigation"],
+  section: ["section", "container", "box", "navigation"],
+  container: ["container", "box", "navigation"],
+  box: ["box"],
+  navigation: ["navigation"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -146,6 +150,8 @@ export const PlasmicHome = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     container: makeNodeComponent("container"),
+    box: makeNodeComponent("box"),
+    navigation: makeNodeComponent("navigation"),
     // Metadata about props expected for PlasmicHome
     internalVariantProps: PlasmicHome__VariantProps,
     internalArgProps: PlasmicHome__ArgProps
