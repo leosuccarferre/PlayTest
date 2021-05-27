@@ -20,19 +20,19 @@ import Inputs from "../../Inputs"; // plasmic-import: zkyzGMiVRz/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_blank_project.module.css"; // plasmic-import: wP9heSzxawTbjKEhrsKJZp/projectcss
-import * as sty from "./PlasmicHomepage.module.css"; // plasmic-import: Wm2BnPF0AwwC/css
+import * as sty from "./PlasmicHome.module.css"; // plasmic-import: Wm2BnPF0AwwC/css
 
-export const PlasmicHomepage__VariantProps = new Array();
+export const PlasmicHome__VariantProps = new Array();
 
-export const PlasmicHomepage__ArgProps = new Array();
+export const PlasmicHome__ArgProps = new Array();
 
-function PlasmicHomepage__RenderFunc(props) {
+function PlasmicHome__RenderFunc(props) {
   const { variants, args, overrides, forNode, dataFetches } = props;
   return (
     <React.Fragment>
       <Head>
-        <title key="title">{""}</title>
-        <meta key="og:title" property="og:title" content={""} />
+        <title key="title">{"Leo"}</title>
+        <meta key="og:title" property="og:title" content={"Leo"} />
         <meta
           key="description"
           name="description"
@@ -65,15 +65,20 @@ function PlasmicHomepage__RenderFunc(props) {
               hasGap={true}
               className={classNames(defaultcss.all, sty.container)}
             >
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
-                  sty.box__nfyt
-                )}
+              <Inputs
+                className={classNames("__wab_instance", sty.inputs__sv2A4)}
+                link={""}
               >
-                {"Leo"}
-              </div>
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.box__acEOl
+                  )}
+                >
+                  {"Leo"}
+                </div>
+              </Inputs>
 
               <p.Stack
                 as={"div"}
@@ -81,17 +86,17 @@ function PlasmicHomepage__RenderFunc(props) {
                 className={classNames(defaultcss.all, sty.box___2R9OY)}
               >
                 <Inputs
-                  className={classNames("__wab_instance", sty.inputs__gE3Lt)}
-                  link={""}
-                >
-                  {"Home"}
-                </Inputs>
-
-                <Inputs
                   className={classNames("__wab_instance", sty.inputs___8Y3Zl)}
                   link={"/about"}
                 >
                   {"About"}
+                </Inputs>
+
+                <Inputs
+                  className={classNames("__wab_instance", sty.inputs__hq9Xe)}
+                  link={"/contact"}
+                >
+                  {"Contact"}
                 </Inputs>
               </p.Stack>
             </p.Stack>
@@ -113,12 +118,12 @@ function makeNodeComponent(nodeName) {
     const { variants, args, overrides } = deriveRenderOpts(props, {
       name: nodeName,
       descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicHomepage__ArgProps,
-      internalVariantPropNames: PlasmicHomepage__VariantProps
+      internalArgPropNames: PlasmicHome__ArgProps,
+      internalVariantPropNames: PlasmicHome__VariantProps
     });
 
     const { dataFetches } = props;
-    return PlasmicHomepage__RenderFunc({
+    return PlasmicHome__RenderFunc({
       variants,
       args,
       overrides,
@@ -127,25 +132,25 @@ function makeNodeComponent(nodeName) {
     });
   };
   if (nodeName === "root") {
-    func.displayName = "PlasmicHomepage";
+    func.displayName = "PlasmicHome";
   } else {
-    func.displayName = `PlasmicHomepage.${nodeName}`;
+    func.displayName = `PlasmicHome.${nodeName}`;
   }
   return func;
 }
 
-export const PlasmicHomepage = Object.assign(
-  // Top-level PlasmicHomepage renders the root element
+export const PlasmicHome = Object.assign(
+  // Top-level PlasmicHome renders the root element
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     container: makeNodeComponent("container"),
-    // Metadata about props expected for PlasmicHomepage
-    internalVariantProps: PlasmicHomepage__VariantProps,
-    internalArgProps: PlasmicHomepage__ArgProps
+    // Metadata about props expected for PlasmicHome
+    internalVariantProps: PlasmicHome__VariantProps,
+    internalArgProps: PlasmicHome__ArgProps
   }
 );
 
-export default PlasmicHomepage;
+export default PlasmicHome;
 /* prettier-ignore-end */

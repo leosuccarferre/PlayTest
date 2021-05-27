@@ -29,27 +29,14 @@
       "components": [
         {
           "id": "Wm2BnPF0AwwC",
-          "name": "Homepage",
+          "name": "Home",
           "type": "managed",
           "projectId": "wP9heSzxawTbjKEhrsKJZp",
-          "renderModuleFilePath": "plasmic/blank_project/PlasmicHomepage.jsx",
+          "renderModuleFilePath": "plasmic/blank_project/PlasmicHome.jsx",
           "importSpec": {
             "modulePath": "../pages/index.jsx"
           },
-          "cssFilePath": "plasmic/blank_project/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "GPYSU_3Kf2",
-          "name": "About",
-          "type": "managed",
-          "projectId": "wP9heSzxawTbjKEhrsKJZp",
-          "renderModuleFilePath": "plasmic/play_test/PlasmicAbout.jsx",
-          "importSpec": {
-            "modulePath": "../pages/about.jsx"
-          },
-          "cssFilePath": "plasmic/play_test/PlasmicAbout.module.css",
+          "cssFilePath": "plasmic/blank_project/PlasmicHome.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         },
@@ -65,6 +52,32 @@
           "cssFilePath": "plasmic/play_test/PlasmicInputs.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "fwJQcLvPXd",
+          "name": "About",
+          "type": "managed",
+          "projectId": "wP9heSzxawTbjKEhrsKJZp",
+          "renderModuleFilePath": "plasmic/play_test/PlasmicAbout.jsx",
+          "importSpec": {
+            "modulePath": "../pages/about.jsx"
+          },
+          "cssFilePath": "plasmic/play_test/PlasmicAbout.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "w_nwgduMFS",
+          "name": "Contact",
+          "type": "managed",
+          "projectId": "wP9heSzxawTbjKEhrsKJZp",
+          "renderModuleFilePath": "plasmic/play_test/PlasmicContact.jsx",
+          "importSpec": {
+            "modulePath": "../pages/contact.jsx"
+          },
+          "cssFilePath": "plasmic/play_test/PlasmicContact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [],
