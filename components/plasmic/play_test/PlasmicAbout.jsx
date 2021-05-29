@@ -40,6 +40,12 @@ function PlasmicAbout__RenderFunc(props) {
         />
       </Head>
 
+      <style global jsx>{`
+        body {
+          margin: 0;
+        }
+      `}</style>
+
       <div className={defaultcss.plasmic_page_wrapper}>
         <div
           data-plasmic-name={"root"}

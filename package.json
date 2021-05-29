@@ -8,7 +8,7 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.151",
+    "@plasmicapp/cli": "^0.1.152",
     "@plasmicapp/react-web": "^0.2.57",
     "next": "latest",
     "react": "^16.13.1",

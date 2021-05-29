@@ -44,7 +44,7 @@ function PlasmicHeader__RenderFunc(props) {
           sty.box__ry3Yt
         )}
       >
-        {"123"}
+        {"Leonard Maurice"}
       </div>
 
       <p.Stack
@@ -54,7 +54,17 @@ function PlasmicHeader__RenderFunc(props) {
       >
         <Inputs link={"/"}>{"Home"}</Inputs>
 
-        <Inputs link={"/about"}>{"About"}</Inputs>
+        <Inputs link={"/about"}>
+          <div
+            className={classNames(
+              defaultcss.all,
+              defaultcss.__wab_text,
+              sty.box__t9Odh
+            )}
+          >
+            {"About"}
+          </div>
+        </Inputs>
       </p.Stack>
     </p.Stack>
   );
