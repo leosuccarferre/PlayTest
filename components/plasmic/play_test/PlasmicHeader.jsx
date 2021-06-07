@@ -64,7 +64,7 @@ function PlasmicHeader__RenderFunc(props) {
               sty.box___9Ycyn
             )}
           >
-            {"Made in Plasmic"}
+            {"Made (and published) in Plasmic"}
           </div>
         </Inputs>
       </p.Stack>
