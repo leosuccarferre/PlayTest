@@ -4,6 +4,7 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
+  border-radius: 6px;
 }
 .root:hover {
   background: #0a84ff1a;

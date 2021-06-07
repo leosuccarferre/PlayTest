@@ -78,6 +78,19 @@
           "cssFilePath": "plasmic/play_test/PlasmicHeader.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "YIGp5dSat0",
+          "name": "Another",
+          "type": "managed",
+          "projectId": "wP9heSzxawTbjKEhrsKJZp",
+          "renderModuleFilePath": "plasmic/play_test/PlasmicAnother.jsx",
+          "importSpec": {
+            "modulePath": "../pages/another.jsx"
+          },
+          "cssFilePath": "plasmic/play_test/PlasmicAnother.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [],

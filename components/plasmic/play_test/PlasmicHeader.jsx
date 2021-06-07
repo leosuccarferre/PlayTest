@@ -44,7 +44,7 @@ function PlasmicHeader__RenderFunc(props) {
           sty.box__ry3Yt
         )}
       >
-        {"Leonard Maurice"}
+        {"Under Construction"}
       </div>
 
       <p.Stack
@@ -52,17 +52,19 @@ function PlasmicHeader__RenderFunc(props) {
         hasGap={true}
         className={classNames(defaultcss.all, sty.box__o3T3S)}
       >
-        <Inputs link={"/"}>{"Home"}</Inputs>
-
-        <Inputs link={"/about"}>
+        <Inputs
+          data-plasmic-name={"inputs"}
+          data-plasmic-override={overrides.inputs}
+          link={"http://plasmic.app"}
+        >
           <div
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.box__t9Odh
+              sty.box___9Ycyn
             )}
           >
-            {"About"}
+            {"Made in Plasmic"}
           </div>
         </Inputs>
       </p.Stack>
@@ -71,7 +73,8 @@ function PlasmicHeader__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "inputs"],
+  inputs: ["inputs"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -105,6 +108,7 @@ export const PlasmicHeader = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    inputs: makeNodeComponent("inputs"),
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
     internalArgProps: PlasmicHeader__ArgProps
